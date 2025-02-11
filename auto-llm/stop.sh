@@ -26,6 +26,8 @@ sudo systemctl stop ollama
 echo "Ollama service stopped."
 
 # 2. Stopping Docker service
+sudo systemctl stop docker.socket
+sudo systemctl stop docker.service
 sudo systemctl stop docker
 echo "Docker service stopped."
 
